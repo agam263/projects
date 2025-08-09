@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quote-box">
+            <div class="header">
+                <h1><i class="fas fa-quote-left"></i> Quote Generator</h1>
+                <p>Get inspired with random quotes</p>
+            </div>
+            
+            <div class="quote-content">
+                <div class="quote-text">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p id="quote">Click the button below to generate a quote</p>
+                    <i class="fas fa-quote-right quote-icon"></i>
+                </div>
+                <div class="quote-author">
+                    <span id="author">- Author</span>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button id="generate-btn" class="generate-btn">
+                    <i class="fas fa-sync-alt"></i>
+                    Generate Quote
+                </button>
+                <button id="copy-btn" class="copy-btn" title="Copy quote">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <button id="tweet-btn" class="tweet-btn" title="Tweet quote">
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </div>
+            
+            <div class="footer">
+                <p>Made with <i class="fas fa-heart"></i> by Open Source Kashmir</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
