@@ -1,2 +1,15 @@
-# projects
-Host beginner-friendly and intermediate projects for contributions.
+# Open Source Kashmir — Projects
+
+This repo hosts all our beginner-friendly and intermediate projects.  
+Each project is in its own folder with setup instructions.
+
+## 📦 Project List
+- `portfolio-template` — Personal website template
+- `quote-generator` — Generates random quotes
+- `weather-app` — Weather info using OpenWeather API
+
+## 💡 How to Contribute
+1. Pick a project
+2. Check the issues tab
+3. Fork and make your changes
+4. Submit a pull request
