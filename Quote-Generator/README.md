@@ -59,6 +59,10 @@ Quote-Generator/
 - High contrast colors for readability
 - Responsive design for all devices
 
+
+<img width="1919" height="950" alt="Screenshot 2025-08-10 005259" src="https://github.com/user-attachments/assets/dc24fdef-5911-41ce-bc83-161c720af2b0" />
+
+
 ## 🚀 Getting Started
 
 1. **Clone or Download** the project files
