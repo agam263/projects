@@ -18,3 +18,31 @@ The Travel Itinerary System is a web application designed to help users plan, or
 2. Click "Create New Itinerary" to start planning your trip.
 3. Add destinations, activities, and other details to your itinerary.
 4. View your itinerary in the calendar view.
+
+## Contributing 📊
+Contributions are welcome! Follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add a new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request. 🔧
+
+## License ⚖️
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact ☎️
+For questions or support, please reach out:
+[@oathar](https://github.com/oathar)
+
+---
+Enjoy seamless travel planning with the Travel Itinerary System! ✨
+
