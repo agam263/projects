@@ -12,7 +12,6 @@ The Travel Itinerary System is a web application designed to help users plan, or
   - HTML5
   - CSS3
   - JavaScript (ES6)
-  - 
 ## Usage 🎢
 1. Register or log in to create your account.
 2. Click "Create New Itinerary" to start planning your trip.
