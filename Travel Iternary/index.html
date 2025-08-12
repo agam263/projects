@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelIfy - Plan Your Next Adventure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        if (!localStorage.getItem('currentUser')) {
+            window.location.href = './login.html';
+        } else {
+            console.log("Welcome back, " + localStorage.getItem('currentUser'));
+        }
+    </script>
+    
+    <div class="navbar">
+        <h1>TravelIfy
+            <img src="https://cdn-icons-png.flaticon.com/128/1028/1028831.png"
+    alt="Itinerary Icon" class="logo-icon">
+        </h1>
+        <div>
+          <a href="index.html">Home</a>
+          <a href="aboutUs.html">About Us</a>
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <h1>Your Next Adventure Awaits</h1>
+        <p>Plan your trip effortlessly with TravelIfy. Start exploring now!</p>
+    </section>
+      
+    <section class="form-section">
+        <form>
+            <label for="destination">Where To?</label>
+            <input type="text" id="destination" placeholder="Enter your destination">
+
+            <label for="days">How Many Days?</label>
+            <select id="days">
+                <option value="">Select duration</option>
+                <option value="1">1 Day</option>
+                <option value="2">2 Days</option>
+                <option value="3">3 Days</option>
+            </select>
+
+            <button type="button" onclick="openPlanPage()">Plan My Trip</button>
+            <div id="loading-indicator" style="display: none;">Loading...</div>
+        </form> 
+    </section>
+
+    <section class="trip-types">
+        <h2>Recommended Trip Types</h2>
+        <div class="trip-grid">
+            <div class="trip-card">
+                <img src="https://imgs.search.brave.com/tUfs_E46C9tdQH4p_fJI5fD8pkdQsfOROK7SgHjMK7E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jLmVr/c3RhdGljLm5ldC9k/ZXgtbWVkaWEvOTEz/L0lNRy1Xb3JsZHMt/b2YtQWR2ZW50dXJl/LURlc2t0b3AtQWN0/aXZpdHlEZXRhaWxz/LTEtMS5qcGc" alt="Adventure Trip">
+                <h3>Adventure Trip</h3>
+                <p>Explore thrilling activities like hiking, camping, and outdoor sports.</p>
+            </div>
+            <div class="trip-card">
+                <img src="https://imgs.search.brave.com/ivSjotHrwEten_8HS6Vcf92ceigzC_ofw3kj_Ixi8Xk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8x/MC8xOC8wOC8xMy90/cmF2ZWwtMTc0OTUw/OF82NDAuanBn" alt="Relaxation Trip">
+                <h3>Relaxation Trip</h3>
+                <p>Unwind with beach views, spa treatments, and serene vibes.</p>
+            </div>
+            <div class="trip-card">
+                <img src="https://imgs.search.brave.com/fTCnlRHyoOtZuc7lah7KU-C-YFjgifRZzintjESbMTc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dG91cnJhZGFyLmNv/bS9zMy90b3VyLzY0/NXg0MzAvMTg0NDcy/XzY0NjNkOTRkMjVl/ZjIuanBn" alt="Cultural Trip">
+                <h3>Cultural Trip</h3>
+                <p>Dive into new cultures with museums, local cuisines, and traditions.</p>
+            </div>
+            <div class="trip-card">
+                <img src="https://imgs.search.brave.com/fvaEc7y6-qpDWiO-Nd_VjzAB8vBq5YGxg9oJAQVX1PE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YWR2ZW50dXJlLWxp/ZmUuY29tLzExLzEx/Lzc2L0V1cm9wZS80/NTR4MzY0LndlYnA"  alt="Food Trip">
+                <h3>Food & Wine Trip</h3>
+                <p>Savor local flavors and enjoy wine-tasting adventures.</p>
+            </div>
+            <div class="trip-card">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/15/58/vw-1835506_1280.jpg"  alt="Road Trip">
+                <h3>Road Trip</h3>
+                <p>Traveling by car to explore different places at your own pace, often with stops along the way for sightseeing.</p>
+            </div>
+            <div class="trip-card">
+                <img src="https://img.freepik.com/free-photo/asian-young-happy-family-enjoy-vacation-beach-evening-dad-mom-kid-relax-running-together-near-sea-while-silhouette-sunset-lifestyle-travel-holiday-vacation-summer-concept_7861-2447.jpg?t=st=1734273427~exp=1734277027~hmac=ec5b1ea87ace84506dae4f123c4b33c1a8b74a5b1866a3a2ad9e341f55f802be&w=1380"  alt="Family Vacations">
+                <h3>Family Vacations</h3>
+                <p>Designed to cater to family needs with activities and accommodations suitable for all ages.</p>
+            </div>
+            <div class="trip-card">
+                <img src="https://plus.unsplash.com/premium_photo-1679515470684-1f6af2858b67?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="Food Trip">
+                <h3>Backpacking</h3>
+                <p>A budget-friendly option that involves traveling with a backpack, often staying in hostels and moving from place to place.</p>
+            </div>
+            <div class="trip-card">
+                <img src="https://imgs.search.brave.com/VCk7VzOL4dj7RxMuzHVj0yco5evQDuRUtkIp7Om0rbU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9vcmRp/bmFyeXRyYXZlbGVy/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAxNS8wOC90YWtl/LWdyZWF0LXRyYXZl/bC1waG90b3Mtc29s/by10cmF2ZWxlci5q/cGc"  alt="Solo Travler">
+                <h3>Solo Travel</h3>
+                <p> Traveling alone, allowing for personal exploration and self-discovery.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TravelIfy. Designed with <span>&hearts;</span>. <a href="contact.html">📞Contact Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
