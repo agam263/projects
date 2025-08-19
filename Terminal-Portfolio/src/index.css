@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #18181b;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.terminal-window {
+  background: #18181b;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  border: 1.5px solid #23232b;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'monospace';
+  color: #a3e635;
+  padding: 0;
+  overflow: hidden;
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  background: #23232b;
+  border-bottom: 1px solid #18181b;
+  padding: 0 1rem;
+}
+.terminal-bar .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+.terminal-bar .dot.red { background: #ff5f56; }
+.terminal-bar .dot.yellow { background: #ffbd2e; }
+.terminal-bar .dot.green { background: #27c93f; }
+
+.terminal-content {
+  padding: 1.5rem 1rem 1rem 1rem;
+  min-height: 40vh;
+  max-height: 60vh;
+  overflow-y: auto;
+  font-size: 1.05rem;
+}
+
+.terminal-input {
+  background: transparent;
+  color: #a3e635;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.05rem;
+  flex: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #23232b;
+}
+::-webkit-scrollbar-thumb {
+  background: #33334d;
+  border-radius: 8px;
+}
+
+::selection {
+  background: #a3e63533;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
