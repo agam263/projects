@@ -1,6 +1,6 @@
 # Open Source Kashmir — Projects
 
-This repo hosts all our beginner-friendly and intermediate projects.  
+This repo hosts all our beginner-friendly and basic projects.  
 Each project is in its own folder with setup instructions.
 
 ## 📦 Project List
