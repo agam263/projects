@@ -4,9 +4,10 @@ This repo hosts all our beginner-friendly and intermediate projects.
 Each project is in its own folder with setup instructions.
 
 ## 📦 Project List
-- `portfolio-template` — Personal website template
+- `Guess-Number` — Guess the Number Game
+- `terminal-portfolio` — Personal website template
 - `quote-generator` — Generates random quotes
-- `weather-app` — Weather info using OpenWeather API
+- `travel-itinerary` — Weather info using OpenWeather API
 
 ## 💡 How to Contribute
 1. Pick a project
