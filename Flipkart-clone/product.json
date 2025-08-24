@@ -1,0 +1,11 @@
+{
+  "name": "boat earphone",
+  "price": 599,
+  "discount": 80,
+  "originalPrice": 2000,
+  "rating": {
+    "totalOrders": 50000,
+    "averageRating": 2.5
+  },
+  "isAvailable": true
+}
